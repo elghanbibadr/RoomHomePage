@@ -1,2 +1,77 @@
 @import './partials/variabels&mixins';
 @import './partials/generals';
+@import  './partials/grid';
+.nav{
+    background: url(/images/mobile-image-hero-1.jpg) no-repeat;
+    background-size: cover;
+      height: 70vh;
+     
+     padding-top: 1.3rem;
+    @include desktop {
+        height: 90vh;
+        display: flex;
+        background: url(/images/desktop-image-hero-1.jpg) no-repeat;
+    }
+    // logos
+    &__logo{
+        position: relative;
+        left: 40%;
+        @include desktop{
+            left: 10%;
+        }
+    }
+   &__hamburger{
+       margin-left: 1rem;
+   }
+   &__hamburger,&__close{
+       cursor: pointer;
+       @include desktop{
+           display: none;
+
+       }
+   }
+   &__close{
+       margin-top:0.2rem ;
+       margin-left: 1rem;
+   }
+   &__list{
+       display: flex;
+       margin-left: 40%;
+       li{
+           a{
+               color: white;
+           }
+           margin-inline: 1rem;
+       }
+   }
+    
+    // mobile
+    @media  screen and (max-width:$desktop) {
+      
+      &__white-bg{
+        
+            background-color: white;
+            display: flex;
+             padding-block:1.3rem;
+           transform: translateY(-120px);
+            ul{
+                display: inherit;
+                margin-right: 1rem;
+                li{
+                    margin: 6px;
+                    a{
+                        color: $heading;
+                    }
+                }
+            }
+        }
+        // actions classe
+        .hideList{
+            transform: translateY(-40px);
+           
+        }
+        .transition{
+            transition: transform 0.4s;
+        }
+    }
+}

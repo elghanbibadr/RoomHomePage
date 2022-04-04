@@ -514,6 +514,15 @@ function hmrAcceptRun(bundle, id) {
 }
 
 },{}],"5udHr":[function(require,module,exports) {
+const navBg = document.querySelector('.nav__white-bg');
+const collapsibleLogo = document.querySelectorAll('.collapsibleLogo');
+// functionalitty
+collapsibleLogo.forEach((logo)=>{
+    logo.addEventListener('click', ()=>{
+        navBg.classList.toggle('hideList');
+        navBg.classList.add('transition');
+    });
+});
 
 },{}]},["78Fws","5udHr"], "5udHr", "parcelRequireb76a")
 

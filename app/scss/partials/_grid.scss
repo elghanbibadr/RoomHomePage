@@ -1,0 +1,11 @@
+@include desktop{
+    .grid{
+        display: grid;
+    }
+    .grid-cols2{
+        grid-template-columns: 2fr 1fr;
+    }
+    .grid-cols3{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
