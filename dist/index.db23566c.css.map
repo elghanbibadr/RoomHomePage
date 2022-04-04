@@ -1,0 +1,1 @@
+{"mappings":"ACAA;;;;;;AAKA;;;;AAGA;;;;;AAIA;;;;AAGA","sources":["app/scss/style.scss","app/scss/partials/_generals.scss","app/scss/partials/_variabels&mixins.scss"],"sourcesContent":["@import './partials/variabels&mixins';\r\n@import './partials/generals';",null,null],"names":[],"version":3,"file":"index.db23566c.css.map","sourceRoot":"/__parcel_source_root/"}
