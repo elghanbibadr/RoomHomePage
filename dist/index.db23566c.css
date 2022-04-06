@@ -13,12 +13,17 @@ body {
   font-size: .8rem;
 }
 
+h1 {
+  font-size: 2rem;
+}
+
 h1, h2, h3, h4, h5, h6 {
-  color: #454545;
+  color: #000;
 }
 
 p {
   color: #a1a1a1;
+  line-height: 1.6;
 }
 
 ul {
@@ -26,7 +31,7 @@ ul {
 }
 
 a {
-  color: #454545;
+  color: #000;
   font-weight: bold;
   text-decoration: none;
 }
@@ -37,7 +42,7 @@ a {
   }
 
   .grid-cols2 {
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1.6fr 1fr;
   }
 
   .grid-cols3 {
@@ -105,14 +110,14 @@ a {
 @media screen and (max-width: 43em) {
   .nav__white-bg {
     background-color: #fff;
-    padding-block: 1.3rem;
+    padding-block: 1.4rem;
     display: flex;
     transform: translateY(-120px);
   }
 
   .nav__white-bg ul {
     display: inherit;
-    margin-right: 1rem;
+    margin-right: .4rem;
   }
 
   .nav__white-bg ul li {
@@ -120,7 +125,7 @@ a {
   }
 
   .nav__white-bg ul li a {
-    color: #454545;
+    color: #000;
   }
 
   .nav .hideList {
@@ -130,6 +135,34 @@ a {
   .nav .transition {
     transition: transform .4s;
   }
+}
+
+.hero {
+  align-self: center;
+  padding: 2rem;
+}
+
+.hero__title {
+  margin-bottom: 1.5rem;
+}
+
+.hero__para {
+  margin-bottom: 3rem;
+}
+
+.hero__link {
+  color: #000;
+  letter-spacing: 7px;
+  cursor: pointer;
+  margin-right: 2rem;
+  font-weight: 400;
+  transition: all .5s;
+  display: inline-flex;
+}
+
+.hero__link:hover {
+  color: #ccc;
+  margin-right: 3rem;
 }
 
 /*# sourceMappingURL=index.db23566c.css.map */
