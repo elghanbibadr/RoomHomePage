@@ -4,7 +4,13 @@
 @import './partials/nav';
 .hero{
     padding: 2rem;
-    align-self: center;
+    @include desktopLarge{
+        align-self: center;
+    }
+    // content
+    .hideContent{
+         display: none;
+    }
     &__title{
     margin-bottom: 1.5rem;
     }
@@ -22,9 +28,10 @@
         &:hover{
             margin-right: 3rem;
             color: #ccc;
-            
-           
         }
       
+    }
+    @include desktop{
+        margin-left: 3rem;
     }
 }

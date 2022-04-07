@@ -1,7 +1,8 @@
 $text-color: hsl(0, 0%, 63%);
 $heading:black;
 $tablette:37.5em;
-$desktop:43em;
+$desktop:55em;
+$desktopLarge:60em;
 
 
 // mixin
@@ -13,6 +14,11 @@ $desktop:43em;
 }
 @mixin desktop {
     @media  (min-width:$desktop) {
+        @content;
+    }
+}
+@mixin desktopLarge {
+    @media  (min-width:$desktopLarge) {
         @content;
     }
 }

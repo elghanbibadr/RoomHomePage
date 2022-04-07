@@ -137,6 +137,15 @@ a {
   }
 }
 
+.nav__arrows {
+  width: fit-content;
+  background-color: #000;
+  padding: 1rem;
+  position: absolute;
+  top: 21.8rem;
+  right: 0;
+}
+
 .hero {
   align-self: center;
   padding: 2rem;

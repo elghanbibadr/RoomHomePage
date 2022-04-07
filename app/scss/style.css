@@ -1,0 +1,258 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-size: 0.8rem;
+  font-family: 'Spartan', sans-serif;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: black;
+}
+
+p {
+  color: #a1a1a1;
+  line-height: 1.6;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+@media (min-width: 55em) {
+  .grid {
+    display: -ms-grid;
+    display: grid;
+  }
+  .grid-cols2 {
+    -ms-grid-columns: 1.6fr 1fr;
+        grid-template-columns: 1.6fr 1fr;
+  }
+  .grid-cols3 {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.nav {
+  background-size: cover;
+  height: 70vh;
+  padding-top: 1.3rem;
+}
+
+@media (min-width: 55em) {
+  .nav {
+    height: 90vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.nav__logo {
+  position: relative;
+  left: 40%;
+}
+
+@media (min-width: 55em) {
+  .nav__logo {
+    left: 10%;
+  }
+}
+
+.nav__hamburger {
+  margin-left: 1rem;
+}
+
+.nav__hamburger, .nav__close {
+  cursor: pointer;
+}
+
+@media (min-width: 55em) {
+  .nav__hamburger, .nav__close {
+    display: none;
+  }
+}
+
+.nav__close {
+  margin-top: 0.2rem;
+  margin-left: 1rem;
+}
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 40%;
+}
+
+.nav__list li {
+  margin-inline: 1rem;
+}
+
+.nav__list li a {
+  color: white;
+}
+
+@media screen and (max-width: 55em) {
+  .nav__white-bg {
+    background-color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-block: 1.4rem;
+    -webkit-transform: translateY(-120px);
+            transform: translateY(-120px);
+  }
+  .nav__white-bg ul {
+    display: inherit;
+    margin-right: .4rem;
+  }
+  .nav__white-bg ul li {
+    margin: 6px;
+  }
+  .nav__white-bg ul li a {
+    color: black;
+  }
+  .nav .hideList {
+    -webkit-transform: translateY(-40px);
+            transform: translateY(-40px);
+  }
+  .nav .transition {
+    -webkit-transition: -webkit-transform 0.4s;
+    transition: -webkit-transform 0.4s;
+    transition: transform 0.4s;
+    transition: transform 0.4s, -webkit-transform 0.4s;
+  }
+}
+
+.nav__arrows {
+  background-color: black;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1rem 0.5rem;
+  position: absolute;
+  top: 59.4%;
+  right: 0rem;
+}
+
+.nav__arrows svg {
+  margin-inline: 1rem;
+  cursor: pointer;
+}
+
+@media (min-width: 55em) {
+  .nav__arrows {
+    right: 26.7%;
+    top: 79.3%;
+  }
+}
+
+@media (min-width: 60em) {
+  .nav__arrows {
+    right: 29.5%;
+    top: 79.7%;
+  }
+}
+
+.changeBg1 {
+  background: url(/images/mobile-image-hero-1.jpg) no-repeat;
+}
+
+@media (min-width: 55em) {
+  .changeBg1 {
+    background: url(/images/desktop-image-hero-1.jpg) no-repeat;
+  }
+}
+
+.changeBg2 {
+  background: url(/images/mobile-image-hero-2.jpg) no-repeat;
+}
+
+@media (min-width: 55em) {
+  .changeBg2 {
+    background: url(/images/desktop-image-hero-2.jpg) no-repeat;
+  }
+}
+
+.changeBg3 {
+  background: url(/images/mobile-image-hero-3.jpg) no-repeat;
+}
+
+@media (min-width: 55em) {
+  .changeBg3 {
+    background: url(/images/desktop-image-hero-3.jpg) no-repeat;
+  }
+}
+
+.changeBg1, .changeBg2, .changeBg3 {
+  background-size: cover;
+}
+
+.hero {
+  padding: 2rem;
+}
+
+@media (min-width: 60em) {
+  .hero {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
+.hero .hideContent {
+  display: none;
+}
+
+.hero__title {
+  margin-bottom: 1.5rem;
+}
+
+.hero__para {
+  margin-bottom: 3rem;
+}
+
+.hero__link {
+  font-weight: 400;
+  color: black;
+  letter-spacing: 7px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-right: 2rem;
+  cursor: pointer;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.hero__link:hover {
+  margin-right: 3rem;
+  color: #ccc;
+}
+
+@media (min-width: 55em) {
+  .hero {
+    margin-left: 3rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
