@@ -1,14 +1,17 @@
+// nav.js
 const navBg=document.querySelector('.nav__white-bg');
-const collapsibleLogo=document.querySelectorAll('.collapsibleLogo');
+ const collapsibleLogo=document.querySelectorAll('.collapsibleLogo');
 
 // functionalitty
-collapsibleLogo.forEach(logo=>{
-    logo.addEventListener('click',()=>{
-        navBg.classList.toggle('hideList');
-        navBg.classList.add('transition');
-    })
-})
-//content and images change
+
+    collapsibleLogo.forEach(logo=>{
+       logo.addEventListener('click',()=>{
+           navBg.classList.toggle('hideList');
+           navBg.classList.add('transition');
+       })
+   })  
+
+// hero.js
 let contentVisible=document.querySelectorAll('.content');
 const nav=document.querySelector('.nav');
 const previousArrow=document.querySelector('.previous-arrow');

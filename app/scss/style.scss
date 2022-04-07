@@ -2,36 +2,5 @@
 @import './partials/generals';
 @import  './partials/grid';
 @import './partials/nav';
-.hero{
-    padding: 2rem;
-    @include desktopLarge{
-        align-self: center;
-    }
-    // content
-    .hideContent{
-         display: none;
-    }
-    &__title{
-    margin-bottom: 1.5rem;
-    }
-    &__para{
-        margin-bottom: 3rem;
-    }
-    &__link{
-        font-weight: 400;
-        color: $heading;
-        letter-spacing: 7px;
-        display: inline-flex;
-        margin-right: 2rem;
-        cursor: pointer;
-        transition:  .5s;
-        &:hover{
-            margin-right: 3rem;
-            color: #ccc;
-        }
-      
-    }
-    @include desktop{
-        margin-left: 3rem;
-    }
-}
+@import './partials/hero';
+@import "./partials/main";
